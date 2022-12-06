@@ -1,0 +1,45 @@
+.icons-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    margin-left: 1rem;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.icons-container img{
+    height: 5rem;
+    margin-right: 1.5rem;
+}
+
+.icons-container .info h3{
+    color: #333;
+    padding-bottom: .5rem;
+    font-size: 1.2rem;
+}
+
+.icons-container .info span{
+    color: #555;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width:768px){
+    .icons-container{
+        width: 80%;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    .icons-container:first-child .info{
+        padding-right: 2rem;
+    }
+    
+
+
+
+}
+
+
+

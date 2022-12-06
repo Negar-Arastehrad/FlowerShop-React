@@ -1,0 +1,19 @@
+.icons{
+    width: 100%;
+    background-color: #eee;
+    padding: 5rem 0;
+}
+
+.icons .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+@media only screen and (max-width:768px){
+    .icons .container{
+        flex-direction: column;
+    }
+}

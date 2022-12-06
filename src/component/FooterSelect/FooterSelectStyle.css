@@ -1,0 +1,34 @@
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.info h3{
+    color: var(--pink);
+    font-size: 1.5rem;
+    padding: .5rem 0;
+}
+
+.info ul li{
+    color: #666;
+    font-size: 1.1rem;
+    padding: .5rem 0;
+    cursor: pointer;
+}
+
+.info ul li:hover{
+    cursor: pointer;
+    color: var(--pink);
+    text-decoration: underline;
+}
+
+.info img{
+    position: absolute;
+    bottom: 3rem;
+}
+
+
+
+

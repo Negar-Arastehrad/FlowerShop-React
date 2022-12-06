@@ -1,0 +1,94 @@
+.about{
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+
+}
+
+.about .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about .row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about video{
+    width: 100%;
+    height: 100%;
+    border: 1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0,.1);
+}
+
+.about .video-container{
+    position: relative;
+}
+
+.about .video-container h3{
+    position: absolute;
+    top: 40%;
+    font-size: 4vmin;
+    background-color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: .3rem 1rem;
+    mix-blend-mode: screen;
+}
+
+.about .content{
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about .content h3{
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: .5rem;
+}
+
+.about .content p{
+    font-size: 1.1rem;
+    color: #999;
+    line-height: 1.5;
+}
+
+.about .btn{
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    width: 27%;
+}
+
+@media only screen and (max-width:768px){
+    .about .row{
+        grid-template-columns: 1fr;
+    }
+
+    .about .content{
+        margin-top: 2rem;
+    }
+
+    .about .content h3{
+        font-size: 1.5rem;
+    }
+
+    .about .content p{
+        font-size: 1rem;
+        margin-top: .5rem;
+    }
+
+    .about .btn{
+        width: 38%;
+    }
+}

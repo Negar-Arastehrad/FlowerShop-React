@@ -1,0 +1,25 @@
+.review{
+    width:80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.review .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.review .box-container{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    gap: .6rem;
+}
+
+@media only screen and (max-width:768px){
+    .review .box-container{
+        grid-template-columns: 1fr;
+        margin: 0 1rem;
+    }
+}

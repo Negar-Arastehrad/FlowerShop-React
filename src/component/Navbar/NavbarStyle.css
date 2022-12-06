@@ -1,0 +1,132 @@
+.navbar{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    padding: 2rem 9%;
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .logo a{
+    font-size: 2.2rem;
+    color: #333;
+    font-weight: bolder;
+}
+
+.navbar .logo span{
+    color: var(--pink);
+}
+
+.navbar .nav-list li a{
+    font-size: 1.3rem;
+    color: #666;
+    padding: 0 1.5rem;
+    font-weight: bold;
+}
+
+.navbar .nav-list li a:hover{
+    color: var(--pink);
+}
+
+.navbar .icon i{
+    cursor: pointer;
+    color: #333;
+    margin-left: 1.5rem;
+    font-size: 1.4rem;
+}
+
+.navbar .icon i:hover{
+    color: var(--pink);
+}
+
+
+.hamburger{
+    display: none;
+    font-size: 2.2rem;
+    color: #333;
+    cursor: pointer;
+}
+
+
+@media only screen and (max-width:768px){
+
+    .navbar{
+        padding: 2rem;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .navbar .logo{
+        margin-left: 3rem;
+    }
+
+    .navbar .logo a{
+        font-size: 1.8rem;
+    }
+
+    .navbar .nav-list li a{
+        font-size: 1rem;
+    }
+
+    .navbar .icon i{
+        font-size: 1.3rem;
+        margin-left: .9rem;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: -900%;
+        right: 0;
+        left:0;
+        background-color: #eee;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        padding: .6rem;
+        transition: none;
+        
+    }
+
+    .active{
+        top: 100%;
+    }
+
+    .navbar .nav-list li{
+        margin: .2rem;
+        padding: 1rem;
+        background-color: #fff;
+        border: .1rem solid  rgba(0, 0, 0, .1);
+        border-radius: .5rem;
+        display: block;
+        width: 100%;
+    }
+
+    .navbar .nav-list li a{
+        padding: 0;
+    }
+
+}
+
+

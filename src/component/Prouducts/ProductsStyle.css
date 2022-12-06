@@ -1,0 +1,123 @@
+.products{
+    width: 80%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+}
+
+.products .box-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: .6rem;
+}
+
+.products .box-container .box{
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: 1rem;
+    border:.1rem solid rgba(0,0,0,.1);
+    position: relative;
+    padding: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products .box .discount{
+    position: absolute;
+    font-size: 1.3rem;
+    color: var(--pink);
+    background:rgba(255, 51, 153,.05);
+    border-radius: 1rem;
+    padding: .4rem .7rem;
+    top: 2%;
+    left: 2%;
+}
+
+.products .box img{
+    height: 13rem;
+}
+
+.products .box .image-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    position: relative;
+}
+
+.products .box .image-container .icon-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 136%;
+    background-color: var(--pink);
+    padding: .5rem;
+    position: absolute;
+    left: -20;
+    bottom: -.3rem;
+}
+
+.icon-container i,a{
+    color: #fff;
+    font-size: 1rem;
+    display: inline-block;
+    padding: .2rem;
+    cursor: pointer;
+}
+
+.icon-container a{
+    border-left: .2rem solid #fff7;
+    border-right: .2rem solid #fff7;
+    width: 50%;
+    text-align: center;
+}
+
+.icon-container a:hover{
+    background-color: #fff;
+    color: var(--pink);
+}
+
+
+.products .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    margin-top: 1rem;
+}
+
+.products .content h3{
+    font-size: 1.3rem;
+    color:#333; 
+}
+
+.products .content .price{
+    font-size: 1.3rem;
+    color: var(--pink);
+    font-weight: bolder;
+    padding-top: .5rem;
+}
+
+.products .content .price span{
+    font-size: .9rem;
+    color:#999;
+    font-weight: lighter;
+    text-decoration: line-through;
+}
+
+@media only screen and (max-width:768px){
+
+    .products .box-container{
+        grid-template-columns: 1fr;
+        margin: 0 1rem;
+    }
+
+    .products .box .image-container .icon-container{
+        width: 170%;
+    }
+}
+

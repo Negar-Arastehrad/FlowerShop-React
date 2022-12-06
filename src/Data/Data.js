@@ -1,0 +1,77 @@
+
+export const Data = [
+    {
+        Id:1,
+        Name:'Flower Pot',
+        Discount:'-10%',
+        Price:'$12.99',
+        BeforePrice:'$15.99',
+        Img:'./images/img-1.jpg',
+    },
+    {
+        Id:2,
+        Name:'Flower Pot',
+        Discount:'-15%',
+        Price:'$12.99',
+        BeforePrice:'$15.99',
+        Img:'./images/img-2.jpg',
+    },
+    {
+        Id:3,
+        Name:'Flower Pot',
+        Discount:'-5%',
+        Price:'$12.99',
+        BeforePrice:'$15.99',
+        Img:'./images/img-3.jpg',
+    },
+    {
+        Id:4,
+        Name:'Flower Pot',
+        Discount:'-20%',
+        Price:'$12.99',
+        BeforePrice:'$15.99',
+        Img:'./images/img-1.jpg',
+    },
+    {
+        Id:5,
+        Name:'Flower Pot',
+        Discount:'-17%',
+        Price:'$12.99',
+        BeforePrice:'$15.99',
+        Img:'./images/img-4.jpg',
+    },
+    {
+        Id:6,
+        Name:'Flower Pot',
+        Discount:'-3%',
+        Price:'$12.99',
+        BeforePrice:'$15.99',
+        Img:'./images/img-6.jpg',
+    },
+    {
+        Id:7,
+        Name:'Flower Pot',
+        Discount:'-18%',
+        Price:'$12.99',
+        BeforePrice:'$15.99',
+        Img:'./images/img-7.jpg',
+    },
+    {
+        Id:8,
+        Name:'Flower Pot',
+        Discount:'-10%',
+        Price:'$12.99',
+        BeforePrice:'$15.99',
+        Img:'./images/img-8.jpg',
+    },
+    {
+        Id:9,
+        Name:'Flower Pot',
+        Discount:'-5%',
+        Price:'$12.99',
+        BeforePrice:'$15.99',
+        Img:'./images/img-9.jpg',
+    },
+
+];
+

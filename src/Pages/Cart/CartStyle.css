@@ -1,0 +1,155 @@
+.cart {
+  width: 100%;
+  height: 100%;
+  margin: 3rem 0;
+}
+
+.cart .container {
+  max-width: 90%;
+  margin: auto;
+  display: flex;
+  gap: 3rem;
+}
+
+.cart .right {
+  background-color: white;
+  border: 4px solid var(--primary);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  width: 400px;
+  color: var(--primary);
+}
+
+.cart .right p,
+label {
+  font-style: italic;
+  font-size: 1.2rem;
+  color: gray;
+}
+
+.cart .right .checkbox {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.cart .right button {
+  padding: 0.5rem;
+  background-color: white;
+  border: 2px solid var(--primary);
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+}
+
+.cart .left {
+  width: 100%;
+}
+
+.cart .left .heading {
+  display: flex;
+  justify-content: space-between;
+  color: var(--primary);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.cart .left .heading:nth-child(1) {
+  margin-left: 1rem;
+}
+
+.cart .flower-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-top: 1.5rem;
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 1.5rem;
+}
+
+.cart .add {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.cart .add button {
+  padding: 0.1rem 0.5rem;
+  border: 2px solid var(--primary);
+  background-color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.cart .add button:hover {
+  background-color: var(--secondary);
+}
+
+.cart img {
+  width: 100px;
+  height: 100px;
+}
+
+.cart .clear {
+  padding: 0.5rem;
+  border: 2px solid var(--primary);
+  background-color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: 0.5s ease;
+  color: var(--primary);
+  margin-top: 1.5rem;
+}
+
+.cart .clear:hover {
+  background-color: var(--secondary);
+}
+
+.cart .empty {
+  text-align: center;
+  width: 100%;
+  height: 25vh;
+  margin-top: 2.5rem;
+}
+
+.cart .empty h1 {
+  font-size: 2rem;
+  color: var(--primary);
+}
+
+.cart .empty a {
+  cursor: pointer;
+  background-color: white;
+  color: var(--primary);
+  font-size: 1.5rem;
+  border: 2px solid var(--primary);
+  padding: 1rem;
+  margin-top: 1.5rem;
+  display: inline-block;
+  transition: 0.7s ease;
+}
+
+.cart .empty a:hover {
+  background-color: var(--secondary);
+}
+
+@media screen and (max-width: 720px) {
+  .cart .container {
+    flex-direction: column;
+    max-width: 80%;
+  }
+
+  .cart .right {
+    margin: auto;
+  }
+
+  .cart .clear {
+    transform: translateX(80%);
+    margin-top: 2rem;
+  }
+}

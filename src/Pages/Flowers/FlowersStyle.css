@@ -1,0 +1,98 @@
+.flowers {
+  width: 100%;
+  height: 100%;
+  margin: 3rem 0;
+}
+
+.flowers .container {
+  margin: auto;
+  max-width: 80%;
+}
+
+.flowers h1 {
+  text-align: center;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.flowers .flower-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 350px);
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.flowers .box {
+  position: relative;
+}
+
+.flowers .content {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: var(--primary);
+  width: 96%;
+  height: 70px;
+  top: 86%;
+}
+
+.flowers .img-container {
+  width: 100%;
+  height: 100%;
+}
+
+.flowers img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.flowers .box:hover {
+  transform: translateY(-2%);
+  transition: 0.7s ease;
+  cursor: pointer;
+  box-shadow: var(--box-shadow);
+}
+
+.flowers .box:hover img {
+  transform: scale(1.03);
+  transition: 0.7s ease;
+}
+
+.flowers .pagination{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  gap: .8rem;
+}
+
+.pagination button{
+  padding: .5rem .7rem;
+  border: 2px solid var(--primary);
+  cursor: pointer;
+  color: var(--primary);
+  font-family: "Alegreya", serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  background-color: white;
+  transition: 0.5s ease;
+}
+
+.pagination button:hover{
+  background-color: var(--secondary);
+}
+
+
+.pagination__disable{
+  opacity: 0;
+}
+
+.pagination__selected{
+  background-color: rgb(220, 220, 220);
+}
+
+.flowers .active{
+  background-color: var(--secondary);
+}

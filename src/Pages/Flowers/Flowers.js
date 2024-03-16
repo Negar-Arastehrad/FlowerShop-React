@@ -6,6 +6,7 @@ import { FlowerData } from "../../Data/FlowerData";
 import { Link } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
 import { IoIosArrowBack } from "react-icons/io";
+import BreadCrumbs from "../../Components/BreadCrumbs/BreadCrumbs";
 
 const Flowers = () => {
   const [page, setPage] = useState(1);
@@ -27,6 +28,7 @@ const Flowers = () => {
   return (
     <>
       <SecondNav />
+      <BreadCrumbs />
       <div className="flowers">
         <div className="container">
           <h1>Our Flowers</h1>

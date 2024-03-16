@@ -5,6 +5,7 @@ import SecondNav from "../../Components/SecondNav/SecondNav";
 import SecondFooter from "../../Components/SecondFooter/SecondFooter";
 import { FlowerData } from "../../Data/FlowerData";
 import { MainContext } from "../../Context/MainContext";
+import BreadCrumbs from "../../Components/BreadCrumbs/BreadCrumbs";
 
 const Details = () => {
   const { name } = useParams();
@@ -26,6 +27,7 @@ const Details = () => {
   return (
     <>
       <SecondNav />
+      <BreadCrumbs />
       <div className="details">
         <div className="container">
           {FlowerData.filter((f) => f.name === name).map((flower) => {

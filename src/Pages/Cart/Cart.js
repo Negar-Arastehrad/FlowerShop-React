@@ -6,6 +6,7 @@ import { MdLock } from "react-icons/md";
 import { IoMdUnlock } from "react-icons/io";
 import { MainContext } from "../../Context/MainContext";
 import { Link } from "react-router-dom";
+import BreadCrumbs from "../../Components/BreadCrumbs/BreadCrumbs";
 
 const Cart = () => {
   const [checkBox, setCheckBox] = useState(false);
@@ -25,6 +26,7 @@ const Cart = () => {
   return (
     <>
       <SecondNav />
+      <BreadCrumbs />
       <div className="cart">
         <div className="container">
           {cartItems.length === 0 && (

@@ -1,0 +1,17 @@
+.breadCrumbs{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    display: flex;
+    gap: .3rem;
+  }
+  
+  .breadCrumbs a{
+    color: var(--primary);
+  }
+  
+  .breadCrumbs p{
+    color: rgb(152, 152, 152);
+    cursor: default;
+  }

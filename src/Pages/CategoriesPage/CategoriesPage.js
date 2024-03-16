@@ -6,6 +6,7 @@ import SecondNav from '../../Components/SecondNav/SecondNav'
 import SecondFooter from '../../Components/SecondFooter/SecondFooter'
 import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
+import BreadCrumbs from "../../Components/BreadCrumbs/BreadCrumbs";
 
 
 
@@ -20,6 +21,7 @@ const CategoriesPage = () => {
   return (
     <>
     <SecondNav />
+    <BreadCrumbs />
     <div className="category-page">
       <div className="container">
 

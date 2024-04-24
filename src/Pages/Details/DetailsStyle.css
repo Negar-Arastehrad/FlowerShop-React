@@ -8,7 +8,7 @@
   max-width: 80%;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 2rem;
 }
@@ -85,9 +85,7 @@
 .details img {
   width: 550px;
   height: 540px;
-
 }
-
 
 @media screen and (max-width: 720px) {
   .details .container {
@@ -97,15 +95,43 @@
   .details img {
     width: 400px;
     height: 400px;
+    max-width: 98%;
   }
 
   .details .table {
     width: 400px;
     height: 450px;
+    max-width: 90%;
+    margin: 0 auto;
+    overflow-y: scroll;
   }
 
   .details .buttons {
     flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1140px) {
+  .details img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .details .table {
+    width: 350px;
+    height: 350px;
+    max-width: 90%;
+    margin: 0 auto;
+    overflow-y: scroll;
+  }
+
+  .details .container {
+    gap: 2rem;
+  }
+
+  .details .buttons {
+    justify-content: center;
     gap: 1rem;
   }
 }

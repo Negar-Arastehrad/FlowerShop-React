@@ -4,7 +4,8 @@ import { Link, useLocation } from "react-router-dom";
 
 const BreadCrumbs = () => {
   const { pathname } = useLocation();
-  const pathnames = pathname.split("/").filter((p) => p);
+  
+  const pathnames = pathname.split("/").filter((p) => p); // ijade ye araye az path ha bedoone / va "". masalan ["flowers", "fanciful"]
 
   let BreadCrumbsPath = "";
 
